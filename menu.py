@@ -27,6 +27,6 @@ class Menu:
         for items in self.drinks:
             print(f"{self.drinks.index(items) + 1}. {items}")
 
-x = Menu()
-x.starters_menu()
-x.drinks_menu()
+# x = Menu()
+# x.starters_menu()
+# x.drinks_menu()
