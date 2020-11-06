@@ -1,28 +1,15 @@
+# This class contains the menu and a function to display it
 class Menu:
 
     print("Welcome!")
+
     def __init__(self):
-        # self.starters = ["spring rolls", "stuffed mushrooms", "buffalo wings"]
-        self.menu_list = ["shawarma", "butter chicken", "rice platter"]
-        # self.sides = ["naan", "fries", "garlic bread"]
-        # self.drinks = ["pepsi", "orange fanta", "water"]
+        # menu items are stored as a list
+        self.menu_list = ["spring rolls", "buffalo wings", "shawarma", "butter chicken", "rice platter"]
 
-    # def starters_menu(self):
-    #     print("This is our starters menu")
-    #     for items in self.starters:
-    #         print(f"{self.starters.index(items) + 1}. {items}")
-
+    # this function displays the menu in a formatted way
     def menu_display(self):
-        print("This is our main course menu: ")
+        print("This is our menu: ")
+        # for loop iterates over every item in the menu list and displays them as an ordered list
         for items in self.menu_list:
             print(f"{self.menu_list.index(items) + 1}. {items}")
-
-    # def sides_menu(self):
-    #     print("This is our sides menu")
-    #     for items in self.sides:
-    #         print(f"{self.sides.index(items) + 1}. {items}")
-    #
-    # def drinks_menu(self):
-    #     print("This is our drinks menu")
-    #     for items in self.drinks:
-    #         print(f"{self.drinks.index(items) + 1}. {items}")
